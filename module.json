@@ -1,0 +1,30 @@
+{
+  "name": "disable-admin",
+  "title": "Disable Admin",
+  "description": "Disables the ability to return to the admin interface from within a game. This should only be used on demo servers; it can lock your game if you don't have the ability to manually restart. Forked from Gabba Gabba Hey by Anathema.",
+  "version": "1.0.0",
+  "author": "Asacolips, Anathema",
+  "authors": [
+    {
+      "name": "Asacolips",
+      "url": "https://gitlab.com/asacolips-projects"
+    },
+    {
+      "name": "Anathema",
+      "email": "sm.anathema@gmail.com",
+      "url": "https://gitlab.com/anathemamask/gabbagabbahey"
+    }
+  ],
+  "scripts": "",
+  "esmodules": ["disable-admin.js"],
+  "styles": [],
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion": "0.6.2",
+  "url": "https://gitlab.com/asacolips-projects/foundry-mods/disable-admin",
+  "manifest": "https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/raw/master/module.json",
+  "download": "https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/-/archive/1.0.0/disable-admin-master.zip",
+  "license": "MIT",
+  "readme": "README.md",
+  "bugs": "",
+  "changelog": ""
+}
