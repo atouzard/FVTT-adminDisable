@@ -1,24 +1,14 @@
+# Disable Admin
 
-       _____          ____  ____             _____          ____  ____          
-      / ____|   /\   |  _ \|  _ \   /\      / ____|   /\   |  _ \|  _ \   /\    
-     | |  __   /  \  | |_) | |_) | /  \    | |  __   /  \  | |_) | |_) | /  \   
-     | | |_ | / /\ \ |  _ <|  _ < / /\ \   | | |_ | / /\ \ |  _ <|  _ < / /\ \  
-     | |__| |/ ____ \| |_) | |_) / ____ \  | |__| |/ ____ \| |_) | |_) / ____ \ 
-     _\_____/_/  __\_\____/|____/_/  __\_\ _\_____/_/__ _\_\____/|____/_/_   \_\
-     \ \        / /  ____|     /\   / ____/ ____|  ____|  __ \__   __|  | |  | |
-      \ \  /\  / /| |__       /  \ | |   | |    | |__  | |__) | | |     | |  | |
-       \ \/  \/ / |  __|     / /\ \| |   | |    |  __| |  ___/  | |     | |  | |
-        \  /\  /  | |____   / ____ \ |___| |____| |____| |      | |     | |__| |
-         \/  \/   |______| /_/    \_\_____\_____|______|_|      |_|      \____/ 
+## Installation
+Install using the foundry module browser using the manifest URL: [https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/raw/master/module.json](https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/raw/master/module.json)
 
-## One of us
-
-Install using the foundry module browser with the module.json manifest
 ## Usage
-if you need to remove this module once activated and you cannot restart the server, contact a foundry moderator and ask them to check the pinned messages in the moderator chatroom for the unlock command.
+This module will remove all buttons from your world related to configuring players, enabling or disabling modules, or returning to the setup screen.
 
-## What does it do?
-This super simple module removes visibility for the Return to Setup, Module Configuration, and Player Configuration menus on foundry servers intended for use as a GM demo server.
+**DO NOT INSTALL THIS MODULE UNLESS YOU'RE COMFORTABLE ADMINISTRATING YOUR SERVER MANUALLY**
+
+If you need to remove the module and can't exit your world, you can delete the module files and restart your demo server, but you should not install this module unless you already have a system in place to handle automatic restarts to your server.
 
 ## License
-open source, open distribution, do whatever you want.
+MIT. Originally forked from [Gabba Gabba Hey](https://gitlab.com/anathemamask/gabbagabbahey/-/tree/master).
