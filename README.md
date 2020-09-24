@@ -1,7 +1,9 @@
 # Disable Admin
 
+This module is exclusively for [Ravel PF2](https://www.ravel.pathfinder2) admins. If you want to use it you will want to change the Ids in `module.js`
+
 ## Installation
-Install using the foundry module browser using the manifest URL: [https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/raw/master/module.json](https://gitlab.com/asacolips-projects/foundry-mods/disable-admin/raw/master/module.json)
+Install using the foundry module browser using the manifest URL: [https://raw.githubusercontent.com/atouzard/FVTT-adminDisable/master/module.json](https://raw.githubusercontent.com/atouzard/FVTT-adminDisable/master/module.json)
 
 ## Usage
 This module will remove all buttons from your world related to configuring players, enabling or disabling modules, or returning to the setup screen.
