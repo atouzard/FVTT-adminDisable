@@ -6,6 +6,10 @@ Hooks.on("renderSettings", (app, html) => {
     html.find('button[data-action="setup"]').remove();
     html.find('button[data-action="modules"]').remove();
     html.find('button[data-action="players"]').remove();
+    
+    if (game.user.data.role > 1) {
+      html.find('button[data-action="configure"]').remove();
+    }
   }
 });
 
