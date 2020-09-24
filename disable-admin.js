@@ -1,44 +1,29 @@
 /* ------------------------------------ */
 /* Initialize module                    */
 /* ------------------------------------ */
-Hooks.on("init", () => {
-  // CONFIG.debug.hooks = true
-  const demoText = `
-=============================================================
-    ____  ________  _______     __  _______  ____  ______
-   / __ \\/ ____/  |/  / __ \\   /  |/  / __ \\/ __ \\/ ____/
-  / / / / __/ / /|_/ / / / /  / /|_/ / / / / / / / __/
- / /_/ / /___/ /  / / /_/ /  / /  / / /_/ / /_/ / /___
-/_____/_____/_/  /_/\\____/  /_/  /_/\\____/_____/_____/
 
-          _______   _____    ____  __    __________
-         / ____/ | / /   |  / __ )/ /   / ____/ __ \\
-        / __/ /  |/ / /| | / __  / /   / __/ / / / /
-       / /___/ /|  / ___ |/ /_/ / /___/ /___/ /_/ /
-      /_____/_/ |_/_/  |_/_____/_____/_____/_____/
-
--------------------------------------------------------------
-
-              Have fun exploring FoundryVTT!
-
-=============================================================
-  `
-  console.log(`${demoText}`);
-});
+let userIdsToShowItems = [ "5d24f4ba6154fxGM", "5d44a07c9fc5exGM" ];
 
 // Remove settings to configure modules or exit to the setup screen.
 Hooks.on("renderSettings", (app, html) => {
-  html.find('button[data-action="setup"]').remove();
-  html.find('button[data-action="modules"]').remove();
+  if (!userIdsToShowItems .includes(game.userId) {
+    html.find('button[data-action="setup"]').remove();
+    html.find('button[data-action="modules"]').remove();
+    html.find('button[data-action="configure"]').remove();
+  }
 });
 
 // Remove dialog links to return to the setup screen.
 Hooks.on("renderMainMenu", (app, html, items) => {
-  html.find('.menu-players').remove();
-  html.find('.menu-world').remove();
+  if (!userIdsToShowItems .includes(game.userId) {
+    html.find('.menu-players').remove();
+    html.find('.menu-world').remove();
+  }
 });
 
 // Remove the disable-admin module so that it can't be... disabled.
 Hooks.on("renderModuleManagement", (app, html, options) => {
-  html.find('li[data-module-name="disable-admin"]').remove();
+  if (!userIdsToShowItems .includes(game.userId) {
+    html.find('li[data-module-name="disable-admin"]').remove();
+  }
 });
