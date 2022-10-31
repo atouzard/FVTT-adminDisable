@@ -25,7 +25,7 @@
   "compatibility": {
     "minimum": "9.238",
     "verified": "9.242"
-  }
+  },
   "url": "https://gitlab.com/asacolips-projects/foundry-mods/disable-admin",
   "manifest": "https://raw.githubusercontent.com/atouzard/FVTT-adminDisable/master/module.json",
   "download": "https://github.com/atouzard/FVTT-adminDisable/archive/master.zip",
